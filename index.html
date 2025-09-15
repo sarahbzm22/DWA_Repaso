@@ -3,7 +3,7 @@
   <head>
     <title>DWA Repaso</title>
     <meta charset="UTF-8" />
-    <!-- TO DO Enlazar hoja de estilos -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
@@ -20,10 +20,8 @@
       </nav>
     </header>
 
-    <!-- TO DO Identificar a las secciones para que funcione el menú -->
-
     <main>
-      <section>
+      <section id="uni">
         <h2>UDIT</h2>
         <p>
           UDIT es la primera y única Universidad especializada en Diseño,
@@ -40,26 +38,95 @@
         </p>
       </section>
 
-      <section>
+      <section id="titulos">
         <h2>Titulaciones</h2>
         <p>
           En UDIT ofrecemos multitud de titulaciones de grado, postgrado y
           doctorado en las áreas de diseño y tecnología
         </p>
-        <!-- TO DO Definir una lista doble, de forma que en el ítem "Grado" haya una sublista con todos los títulos de grado. Lo mismo para máster y doctorado -->
+        <ul>
+          <li>
+            Grados:
+            <ul>
+              Diseño Multimedia y Gráfico
+            </ul>
+            <ul>
+              Diseño Audiovisual e Ilustración
+            </ul>
+            <ul>
+              Diseño de Producto
+            </ul>
+          </li>
+          <li>
+            Másteres:
+            <ul>
+              UX para el diseño de productos y servicios
+            </ul>
+            <ul>
+              Diseño Gráfico
+            </ul>
+            <ul>
+              Branding
+            </ul>
+          </li>
+          <li>
+            Doctorados:
+            <ul>
+              Diseño y tecnología aplicados a la empresa
+            </ul>
+          </li>
+        </ul>
       </section>
 
-      <section>
+      <section id="exito">
         <h2>Casos de éxito</h2>
         <div class="galeria">
-          <!-- TO DO Añadir imágenes con pie de foto usando elementos semánticos. Las imágenes están en la carpeta img del proyecto -->
+          <figure>
+            <img src="img/materioteca.png" alt="" />
+            <figcaption>Materioteca</figcaption>
+          </figure>
+
+          <figure>
+            <img src="img/medialab.png" alt="" />
+            <figcaption>MediaLAB</figcaption>
+          </figure>
+
+          <figure>
+            <img src="img/nuevoedificio.jpeg" alt="" />
+            <figcaption>Nuevo Edificio</figcaption>
+          </figure>
+
+          <figure>
+            <img src="img/printlab.png" alt="" />
+            <figcaption>PrintLAB</figcaption>
+          </figure>
         </div>
       </section>
 
-      <section>
+      <section id="contacto">
         <h2>Contáctanos</h2>
         <div>
-          <!-- TO DO Añadir tres planos de Google Maps con las ubicaciones de los campus -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6071.638382786609!2d-3.6700696245149036!3d40.457138653179726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42292a2a67e76f%3A0x7661d685faad2ff8!2sUDIT%20Universidad%20-%20Campus%20Internacional%20de%20Dise%C3%B1o%20e%20Industrias%20Creativas%20(Sede%20principal)!5e0!3m2!1ses!2ses!4v1757950491205!5m2!1ses!2ses"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.8128474114606!2d-3.671936724514934!3d40.45727905317122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42296df2c813b5%3A0xeb0bf0f2987adc7f!2sUDIT%20Universidad%20-%20Campus%20Internacional%20de%20Dise%C3%B1o%20e%20Industrias%20Creativas.%20Edificio%20Colombia%2C%2044!5e0!3m2!1ses!2ses!4v1757950606516!5m2!1ses!2ses"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.5696904049714!2d-3.629692524515771!3d40.44052635419145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422f840a8a994f%3A0x30bf36feeec08534!2sUDIT%20Universidad%20-%20Campus%20Internacional%20de%20Tecnolog%C3%ADa%2C%20Innovaci%C3%B3n%20y%20Ciencias%20Aplicadas!5e0!3m2!1ses!2ses!4v1757950660973!5m2!1ses!2ses"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </section>
     </main>
