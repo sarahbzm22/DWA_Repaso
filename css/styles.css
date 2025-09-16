@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Bodoni Moda", serif;
+  color: #b8c1ec;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #eebbc3;
+  text-decoration: line-through;
+}
+
+body {
+  background-color: #232946;
+}
+
+p,
+figcaption {
+  color: #eebbc3;
+}
+
+li,
+ul {
+  color: #ffffff;
+}
+
+img,
+iframe {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.galeria {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.galeria > figure {
+  width: 25%;
+  border: #ffffff 3px solid;
+}
