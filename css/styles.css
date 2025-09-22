@@ -6,8 +6,8 @@
 
 h1,
 h2 {
-  font-family: "Bodoni Moda", serif;
-  color: #b8c1ec;
+  font-family: "Montserrat", sans-serif, bold;
+  color: #ffffff;
 }
 
 a {
@@ -16,17 +16,17 @@ a {
 }
 
 a:hover {
-  color: #eebbc3;
+  color: #ffffff;
   text-decoration: line-through;
 }
 
 body {
-  background-color: #232946;
+  background-color: black;
 }
 
 p,
 figcaption {
-  color: #eebbc3;
+  color: #ffffff;
 }
 
 li,
@@ -46,7 +46,62 @@ iframe {
   flex-wrap: wrap;
 }
 
-.galeria > figure {
+.galeria > * {
+  /*el "*" es para seleccionar que a todo lo que haya dentro de "galería" se le aplique estas caracteristicas*/
   width: 25%;
+  border: #ff0000 3px solid;
+}
+
+header,
+section {
+  min-height: 100vh;
   border: #ffffff 3px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section {
+  min-height: 100vh;
+}
+
+header {
+  min-height: calc(100vh - 3rem);
+  background-image: url("../img/nuevoedificio.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+header > h1 {
+  font-size: 9vw;
+  text-align: left;
+  color: #ffffff;
+}
+
+header > h2 {
+  font-size: 4vw;
+  text-align: left;
+  color: #ffffff;
+}
+
+/* Maquetación del menú */
+
+#menu {
+  position: sticky;
+  top: 0;
+}
+
+#menu > ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0%;
+}
+
+#menu > ul > li {
+  list-style: none;
+  border: #ffffff 3px solid;
+  height: 3rem;
+  display: flex;
+  align-items: center;
 }
