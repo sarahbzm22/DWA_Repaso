@@ -44,12 +44,37 @@ iframe {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .galeria > * {
   /*el "*" es para seleccionar que a todo lo que haya dentro de "galería" se le aplique estas caracteristicas*/
-  width: 25%;
-  border: #ff0000 3px solid;
+  width: 30%;
+}
+
+.galeria > figure {
+  position: relative;
+}
+
+.galeria > figure > figcaption {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.galeria > figure > figcaption:hover {
+  opacity: 100%;
 }
 
 header,
@@ -63,6 +88,7 @@ section {
 
 section {
   min-height: 100vh;
+  padding: 3em 30%;
 }
 
 header {
@@ -79,17 +105,28 @@ header > h1 {
   color: #ffffff;
 }
 
-header > h2 {
-  font-size: 4vw;
+section > h2 {
+  font-size: 4rem;
   text-align: left;
-  color: #ffffff;
+  border: #ff0000;
 }
 
+section > p {
+  border: #ffffff;
+}
+
+section > h2,
+section > p {
+  padding-left: 1rem;
+}
 /* Maquetación del menú */
 
 #menu {
   position: sticky;
   top: 0;
+  z-index: 1;
+  background-color: black;
+  border: #ffffff 3px solid;
 }
 
 #menu > ul {
@@ -100,8 +137,48 @@ header > h2 {
 
 #menu > ul > li {
   list-style: none;
-  border: #ffffff 3px solid;
-  height: 3rem;
+  height: 1.2;
   display: flex;
   align-items: center;
+  font-weight: bold;
+}
+
+#uni > p {
+  font-size: 1.2em;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 1200px) {
+  section {
+    padding: 3em 10%;
+  }
+
+  .galeria > figure {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  section > h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .galeria > iframe,
+  .galeria > figure {
+    width: 100%;
+  }
+
+  .galeria > figure > figcaption {
+    opacity: 100%;
+    position: static;
+    height: auto;
+    color: #ffffff;
+    background-color: transparent;
+    font-size: 1em;
+    font-weight: normal;
+    justify-content: start;
+  }
 }
